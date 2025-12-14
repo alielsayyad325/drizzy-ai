@@ -23,7 +23,8 @@ export default function AudioPlayer({ song }: AudioPlayerProps) {
 
     const downloadSong = () => {
         if (song.result_url) {
-            const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000';
+            const rawApiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000';
+            const API_URL = rawApiUrl.replace(/\/$/, '');
             window.open(`${API_URL}${song.result_url}`, '_blank');
         }
     };
@@ -44,7 +45,7 @@ export default function AudioPlayer({ song }: AudioPlayerProps) {
             <div className="bg-white/5 rounded-lg p-6 space-y-4">
                 <audio
                     ref={audioRef}
-                    src={`${process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000'}${song.result_url}`}
+                    src={`${(process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000').replace(/\/$/, '')}${song.result_url}`}
                     onEnded={() => setIsPlaying(false)}
                 />
 
