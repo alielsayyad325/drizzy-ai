@@ -27,7 +27,8 @@ export default function SongGenerator({ onSongGenerated }: SongGeneratorProps) {
 
         try {
             // Call backend API
-            const response = await fetch('http://127.0.0.1:8000/api/v1/songs/generate', {
+            const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000';
+            const response = await fetch(`${API_URL}/api/v1/songs/generate`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -49,7 +50,7 @@ export default function SongGenerator({ onSongGenerated }: SongGeneratorProps) {
             // Poll for status
             const pollInterval = setInterval(async () => {
                 const statusResponse = await fetch(
-                    `http://127.0.0.1:8000/api/v1/songs/${job_id}/status`
+                    `${API_URL}/api/v1/songs/${job_id}/status`
                 );
                 const status = await statusResponse.json();
 
@@ -134,8 +135,8 @@ export default function SongGenerator({ onSongGenerated }: SongGeneratorProps) {
                             key={level}
                             onClick={() => setEnergy(level)}
                             className={`py-2 px-4 rounded-lg font-medium transition-all ${energy === level
-                                    ? 'bg-purple-500 text-white'
-                                    : 'bg-white/5 text-gray-300 hover:bg-white/10'
+                                ? 'bg-purple-500 text-white'
+                                : 'bg-white/5 text-gray-300 hover:bg-white/10'
                                 }`}
                             disabled={isGenerating}
                         >
