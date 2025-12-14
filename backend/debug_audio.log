@@ -1,0 +1,30 @@
+Mixing:
+Vocals: output/vocals\mock_f0ce2e2d-de17-4a45-987b-305b7c8c91c6.mp3 (Exists: True)
+Beat: assets/beats\drake-type-beat-rap-instrumental-2021-227169.mp3 (Exists: True)
+Output: output/songs/9d1e5881-015d-4515-b130-6ab57402148c.mp3
+FFmpeg: C:\Users\aliel\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.0.1-full_build\bin\ffmpeg.exe
+Mixing:
+Vocals: output/vocals\mock_24e47d1e-df69-435d-8e71-8d1d622e193d.mp3 (Exists: True)
+Beat: assets/beats\drake-type-beat-rap-instrumental-2021-227169.mp3 (Exists: True)
+Output: output/songs/1de487a8-dfe8-4b8d-acaa-a8a6b6805a18.mp3
+FFmpeg: C:\Users\aliel\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.0.1-full_build\bin\ffmpeg.exe
+Mixing:
+Vocals: output/vocals\20aa3a4d-bac0-4ce9-aead-da9c2bfc3ad3.mp3 (Exists: True)
+Beat: assets/beats\drake-type-beat-rap-instrumental-2021-227169.mp3 (Exists: True)
+Output: output/songs/bf83769e-c320-4054-8e39-35c3a6b56937.mp3
+FFmpeg: C:\Users\aliel\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.0.1-full_build\bin\ffmpeg.exe
+Mixing:
+Vocals: output/vocals\a61344b3-6bf7-492e-a649-e18b03719880.mp3 (Exists: True)
+Beat: assets/beats\drake-type-beat-rap-instrumental-2021-227169.mp3 (Exists: True)
+Output: output/songs/78fa52fa-8a93-491e-aed8-b46dad76d3d5.mp3
+FFmpeg: C:\Users\aliel\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.0.1-full_build\bin\ffmpeg.exe
+Mixing:
+Vocals: output/vocals\d25334fd-e237-43d0-be98-46a730e352c5.mp3 (Exists: True)
+Beat: assets/beats\love-more-rampb-music-21969.mp3 (Exists: True)
+Output: output/songs/986e96fb-ee9c-40f8-9647-d270e3b12987.mp3
+FFmpeg: C:\Users\aliel\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.0.1-full_build\bin\ffmpeg.exe
+Mixing:
+Vocals: output/vocals\b9da39f3-3fce-4e86-81c5-76fc00678c88.mp3 (Exists: True)
+Beat: assets/beats\love-more-rampb-music-21969.mp3 (Exists: True)
+Output: output/songs/1e2e54fa-5832-4673-8e1d-f53e72921e81.mp3
+FFmpeg: C:\Users\aliel\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.0.1-full_build\bin\ffmpeg.exe

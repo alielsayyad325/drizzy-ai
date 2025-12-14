@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Love More RnB",
+    "file": "love-more-rampb-music-21969.mp3",
+    "bpm": 90,
+    "mood": "romantic",
+    "duration_seconds": 201
+  },
+  {
+    "name": "Drake Type Rap Beat 2021",
+    "file": "drake-type-beat-rap-instrumental-2021-227169.mp3",
+    "bpm": 140,
+    "mood": "melodic",
+    "duration_seconds": 166
+  },
+  {
+    "name": "Lost You Reggaeton",
+    "file": "lost-you-reggaeton-type-beat-277126.mp3",
+    "bpm": 95,
+    "mood": "latin",
+    "duration_seconds": 170
+  },
+  {
+    "name": "Family Matters Diss Type Beat",
+    "file": "family-matters-diss-drake-type-beat-322710 (1).mp3",
+    "bpm": 150,
+    "mood": "aggressive",
+    "duration_seconds": 168
+  }
+]
