@@ -43,7 +43,7 @@ export default function SongGenerator({ onSongGenerated }: SongGeneratorProps) {
 
             if (!response.ok) {
                 const errorText = await response.text();
-                throw new Error(`Failed to start song generation: ${response.status} ${response.statusText} - ${errorText}`);
+                throw new Error(`Failed to fetch ${API_URL}/api/v1/songs/generate: ${response.status} ${response.statusText} - ${errorText}`);
             }
 
             const { job_id } = await response.json();
