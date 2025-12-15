@@ -59,23 +59,17 @@ class AudioService:
             )
             
             if result.returncode != 0:
-                print(f"FFmpeg error: {result.stderr}")
-                return self._create_fallback(output_path)
+                error_msg = f"FFmpeg error: {result.stderr}"
+                print(error_msg)
+                raise Exception(error_msg)
             
             print(f"Song mixed and saved to {output_path}")
             return output_path
             
         except FileNotFoundError:
-            print("FFmpeg not found. Please install FFmpeg and add it to PATH.")
-            return self._create_fallback(output_path)
+            error_msg = "FFmpeg not found. Please install FFmpeg and add it to PATH."
+            print(error_msg)
+            raise Exception(error_msg)
         except Exception as e:
             print(f"Error mixing audio: {e}")
-            return self._create_fallback(output_path)
-
-    def _create_fallback(self, output_path: str) -> str:
-        """Creates a fallback file if mixing fails."""
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
-        with open(output_path, 'w') as f:
-            f.write("Fallback audio - mixing failed")
-        print(f"Created fallback file at {output_path}")
-        return output_path
+            raise e
