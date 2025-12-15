@@ -27,3 +27,4 @@ class SongStatus(BaseModel):
     progress: int
     result_url: Optional[str] = None
     lyrics: Optional[Dict[str, Any]] = None
+    error: Optional[str] = None
