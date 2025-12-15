@@ -67,7 +67,7 @@ export default function SongGenerator({ onSongGenerated }: SongGeneratorProps) {
                 } else if (status.status === 'failed') {
                     clearInterval(pollInterval);
                     setIsGenerating(false);
-                    setError('Song generation failed. Please try again.');
+                    setError(status.error || 'Song generation failed. Please try again.');
                 }
             }, 2000);
         } catch (err: any) {
